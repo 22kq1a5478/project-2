@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            body { background-image: url(r1.jpg);
+                   background-size: 100%;}
+            h1{
+                color:rgb(0,255,255);
+            }
+            p{
+                font-family:'courier,monospace';
+                font-size:small;
+            }
+
+        </style>
+        <script>
+        function validation()
+        {
+       if (isEmpty(document.getElementById('data_2').value.trim())) {
+       alert('First name is required!');
+       return false;
+       }
+       if (isEmpty(document.getElementById('data_3').value.trim())) {
+                alert('middle name is required!');
+                return false;
+                }}
+       </script>
+    </head>
+    <body>
+        <center>
+            <form  method="post"  action="1.loginpage.html" onSubmit="return validation();">     
+            <h1>WELCOME</h1>
+            <h4>Registration Form:</h3>
+                <form  method="post"  action="1.loginpage.html" onSubmit="return validation();">     
+        <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<span style="color: red;"> *</span><br/>
+            <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+            </div>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Middle name<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+                </div>
+        
+        <form  method="post"  action="1.loginpage.html" onSubmit="return validation();">         
+         
+         
+        last name : <input type ="text name"name="name"><br>
+        gender    :<input type ="radio"name="gender">male<br>
+                   <input type ="radio"name="gender">female<br>              
+        age        :<input type ="text number"name="age"><br>
+        User Name:<input type="text" name="uname"><br>
+        password:<input type ="password"name="pass"><br>
+        re-enter password:<input type ="password"name="pass"><br>
+        rooms          :<input type ="radio"name="general">general<br>
+                        <input type ="radio"name="primary">primary<br>
+                        <input type ="radio"name="luxury">luxury<br>               
+                        <input type ="radio"name="super luxury">super luxury<br>
+        number of rooms :<input type="text number"name="number"><br>                
+        address  <br>
+        country         : <select name: "Address">
+            <option value="India">India</option>
+            <option value="India">usa</option>
+            <option value="India">Italy</option>
+        <br>
+             <input type ="submit">                            
+        </form>
+        </center>
+    </body>
+</html>
